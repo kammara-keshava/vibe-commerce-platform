@@ -1,0 +1,46 @@
+/* src/components/login.css */
+.login-page {
+  min-height: 80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  padding:40px 20px;
+}
+.login-card {
+  width: 380px;
+  background: linear-gradient(180deg,#fff,#fff);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(10,20,40,0.12);
+  border: 1px solid rgba(10,20,40,0.03);
+  position:relative;
+  z-index:2;
+}
+.login-card h2 { margin:0 0 8px; font-size:22px; }
+.tagline { margin:0 0 14px; color:#6b7280; font-size:13px; }
+
+.input-row {
+  display:flex; align-items:center; gap:10px; margin-bottom:12px;
+  background:#fafafa; border-radius:10px; padding:8px 10px; border:1px solid rgba(10,20,40,0.03);
+}
+.input-row .icon { color:#2563eb; font-size:18px; }
+.input-row input { border: none; outline:none; background:transparent; flex:1; padding:8px; font-size:14px; }
+
+.btn-primary {
+  width:100%; margin-top:8px; padding:10px; border-radius:10px; border:none;
+  background: linear-gradient(90deg,#2563eb,#1e40af); color:#fff; font-weight:700; cursor:pointer;
+}
+
+.divider { display:flex; align-items:center; gap:10px; margin:14px 0; color:#94a3b8; font-size:13px; }
+.divider::before, .divider::after { content:""; flex:1; height:1px; background:rgba(10,20,40,0.04); border-radius:2px; }
+
+.social-row { display:flex; gap:10px; }
+.social { flex:1; display:flex; align-items:center; gap:10px; justify-content:center; padding:8px 10px; border-radius:8px; border:none; cursor:pointer; font-weight:600; }
+.social.google { background: #fff; border:1px solid rgba(0,0,0,0.06); }
+.social.fb { background: #2b6cb0; color:#fff; }
+
+.blob { position:absolute; border-radius:999px; filter: blur(36px); opacity:0.08; z-index:1; }
+.blob-top { width:200px; height:200px; top:-40px; right:-40px; background:linear-gradient(135deg,#2563eb,#60a5fa); }
+.blob-bottom { width:260px; height:260px; left:-70px; bottom:-80px; background:linear-gradient(135deg,#ff6b6b,#ffb085); }
+:root.theme-dark .login-card { background: linear-gradient(180deg,#070b14,#061326); color: #e6eef8; }
