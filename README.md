@@ -59,46 +59,6 @@ It simulates an online shopping experience with features like product listings, 
 
 ---
 
-## 🗂️ Project Structure
-
-mock-ecom-cart/
-│
-├── backend/
-│ ├── server.js
-│ ├── db.js
-│ └── ecom.db
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── ProductCard.jsx
-│ │ │ ├── Cart.jsx
-│ │ │ ├── CheckoutModal.jsx
-│ │ │ ├── Receipt.jsx
-│ │ │ └── Footer.jsx
-│ │ ├── App.jsx
-│ │ └── api.js
-│ ├── public/
-│ │ └── images/
-│ └── vite.config.js
-│
-├── website images/ # Screenshots
-│ ├── website_1.png
-│ ├── website_2.png
-│ ├── website_3.png
-│ ├── website_4.png
-│ ├── website_5.png
-│ ├── website_6.png
-│ ├── website_7.png
-│ ├── website_8.png
-│ ├── website_9.png
-│ └── website_10.png
-│
-└── README.md
-
-
-
----
 
 ## 🧾 API Endpoints
 
