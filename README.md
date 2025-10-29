@@ -1,34 +1,147 @@
-# React + Vite
+# 🛍️ Vibe Commerce — Modern E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Vibe Commerce** is a full-stack mock e-commerce web application built with **React (Vite)** and **Node.js (Express + SQLite)**.  
+It simulates an online shopping experience with features like product listings, cart management, checkout, and order confirmation — all wrapped in a sleek, Flipkart-inspired UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+> 🔗 [Frontend (Vercel)](#)  
+> 🔗 [Backend API (Render)](#)
 
-## React Compiler
+---
+### Screenshots of the website
+### 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-![](website%20images/Screenshot%202025-10-29%20at%2011.56.43 PM.png)
-
-
-
-
-
+![](website_images/website_1.png)
+![](website_images/website_2.png)
+![](website_images/website_3.png)
+![](website_images/website_4.png)
+![](website_images/website_5.png)
+![](website_images/website_6.png)
+![](website_images/website_7.png)
+![](website_images/website_8.png)
+![](website_images/website_9.png)
+![](website_images/website_10.png)
 
 
-if comes error in frontend use:
+
+
+
+## 🧠 Tech Stack
+
+### 💻 Frontend
+- ⚛️ React + Vite  
+- 🎨 TailwindCSS for modern UI  
+- 🧭 React Router DOM for routing  
+- 📦 Axios for API calls  
+- 💾 LocalStorage for user persistence  
+- ☁️ Deployed on **Vercel**
+
+### ⚙️ Backend
+- 🟢 Node.js + Express.js  
+- 💾 SQLite3 as a lightweight database  
+- 🌐 RESTful APIs for Products, Cart & Checkout  
+- 🛠️ CORS + JSON middleware  
+- ☁️ Hosted on **Render**
+
+---
+
+## ✨ Features
+
+✅ Responsive 5-column product grid  
+✅ Header cart dropdown with live update  
+✅ Checkout modal with order summary & total  
+✅ Order confirmation popup modal (PDF option)  
+✅ Product catalog loaded from SQLite database  
+✅ Clean Flipkart-style footer design  
+✅ Fully deployment-ready architecture  
+
+---
+
+## 🗂️ Project Structure
+
+mock-ecom-cart/
+│
+├── backend/
+│ ├── server.js
+│ ├── db.js
+│ └── ecom.db
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── ProductCard.jsx
+│ │ │ ├── Cart.jsx
+│ │ │ ├── CheckoutModal.jsx
+│ │ │ ├── Receipt.jsx
+│ │ │ └── Footer.jsx
+│ │ ├── App.jsx
+│ │ └── api.js
+│ ├── public/
+│ │ └── images/
+│ └── vite.config.js
+│
+├── website images/ # Screenshots
+│ ├── website_1.png
+│ ├── website_2.png
+│ ├── website_3.png
+│ ├── website_4.png
+│ ├── website_5.png
+│ ├── website_6.png
+│ ├── website_7.png
+│ ├── website_8.png
+│ ├── website_9.png
+│ └── website_10.png
+│
+└── README.md
+
+
+
+---
+
+## 🧾 API Endpoints
+
+| Endpoint | Method | Description |
+|-----------|---------|-------------|
+| `/api/products` | GET | Fetch all products |
+| `/api/cart` | GET | Get all cart items |
+| `/api/cart` | POST | Add item to cart |
+| `/api/cart/:id` | DELETE | Remove item from cart |
+| `/api/checkout` | POST | Place an order and generate a receipt |
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/kammara-keshava/vibe-commerce-platform.git
+cd vibe-commerce-platform
+```
+
+
+
+### 2️⃣ Setup Backend
+cd backend
+npm install
+node server.js
+
+
+
+
+
+### 3️⃣ Setup Frontend
+cd ../frontend
+npm install
+npm run dev
+
+
+### if comes error in frontend use:
 
 step 1:   nvm install 22
 nvm alias default 22
 nvm use 22
-
 
 step 2:   node -v
 
@@ -36,8 +149,32 @@ step 3: rm -rf node_modules package-lock.json
 npm install
 npm run dev
 
+### for the backend after adding products:
 
-for the backend adding products:
+step 1: rm backend/ecom.db
 
 
-rm backend/ecom.db
+### 🧑‍💻 Developer
+
+Keshava K.
+💼 Full Stack Web Developer | 💻 Software Engineer
+📍 Andhra Pradesh, India
+🌐 GitHub
+
+📧 kesava9347@gmail.com
+
+
+
+
+💬 Acknowledgment
+
+Inspired by Flipkart’s UI/UX and developed purely for learning and portfolio demonstration.
+
+
+✅ **What this README includes:**
+- Fully structured overview (frontend + backend)  
+- Properly formatted screenshots grid for all `website_1.png` → `website_10.png`  
+- Setup, API, and deployment guides  
+- Professional footer (developer + license section)
+
+Would you like me to add **badges (React, Node, Vite, SQLite)** at the top for a more GitHub-pro look? I can generate the Markdown snippet with icons next.
