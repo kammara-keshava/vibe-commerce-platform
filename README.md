@@ -138,5 +138,3 @@ Inspired by Flipkart’s UI/UX and developed purely for learning and portfolio d
 - Properly formatted screenshots grid for all `website_1.png` → `website_10.png`  
 - Setup, API, and deployment guides  
 - Professional footer (developer + license section)
-
-Would you like me to add **badges (React, Node, Vite, SQLite)** at the top for a more GitHub-pro look? I can generate the Markdown snippet with icons next.
